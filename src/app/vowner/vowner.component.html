@@ -1,0 +1,21 @@
+<br><br><br><br>
+<h2>welcome</h2>
+<br>
+<button class="btn-dark" (click)="showb()" style="margin-left: 10px;">View Bookings</button>
+<div *ngIf="a4">
+    <br>
+    <table class="table-primary" style="text-align: center;">
+        <thead>Venue Details</thead>
+        <th>booking_id</th>
+        <th>Booking Date</th>
+        <th>Booking Days</th>
+        <th>vname</th>
+        <tr *ngFor="let b of booking">
+            <td>{{b.booking_id}}</td>
+            <td>{{b.bkdate}}</td>
+            <td>{{b.booking_days}}</td>
+            <td>{{b.venues.vname}}</td>
+        </tr>
+    </table>
+</div>
+<br><br><br><br><br>

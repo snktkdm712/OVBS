@@ -1,0 +1,12 @@
+table {
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color: gold;
+    padding: 20px;
+    border-radius: 12px;
+    border-color: black;
+}
+
+th {
+    padding: 10px;
+}
