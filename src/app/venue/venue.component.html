@@ -1,0 +1,47 @@
+<br><br><br><br>
+<div>
+    <img src="https://www.saree.com/blog/wp-content/uploads/2020/05/Four-Seasons-Resort-Club.jpg" alt="" class="b">
+</div>
+<br><br>
+<div>
+    <table class="a">
+        <tr>
+            <th>Venue Name</th>
+            <td>{{venue.vname}}</td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td>{{venue.city}}</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>{{venue.specific_area}}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>{{venue.description}}</td>
+        </tr>
+        <tr>
+            <th>Venue Address</th>
+            <td>{{venue.vaddress}}</td>
+        </tr>
+        <tr>
+            <th>Contact Number</th>
+            <td>{{venue.contact_no}}</td>
+        </tr>
+        <tr>
+            <th>Venue Rate</th>
+            <td>{{venue.vrate}}</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div style="text-align: center;"><button style="padding: 15px;" class="btn-dark" (click)="book()">Book Venue</button></div>
+            </td>
+        </tr>
+    </table>
+    <div *ngIf="b" style="text-align: center;">
+        <h2>Please Register or Login for Booking Venue</h2>
+        <button class="btn-dark"><a href="/login">For Login Click here</a></button>
+    </div>
+    <br>
+</div>
