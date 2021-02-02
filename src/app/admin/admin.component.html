@@ -1,0 +1,79 @@
+<div style="background-color: #FF0AFF;"><br><br><br>
+    <h2 class="jumbotron-fluid" style="text-align: center;color: black;">Dashboard</h2>
+    <hr style="border-width: 3px;border-color: black;">
+</div>
+<div>
+    <title></title>
+</div>
+<div>
+    <button class="btn-dark" (click)="showAdmins()">Show All Admins </button>
+    <div *ngIf="a1">
+        <table class="table-primary" style="text-align: center;">
+            <thead>Admins</thead>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Account Balance</th>
+            <tr *ngFor="let i of admins">
+                <td>{{i.firstName}}</td>
+                <td>{{i.lastName}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.account_balance}}</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <button class="btn-dark" (click)="showVowners()">Show Venues Owners</button>
+    <div *ngIf="a2">
+        <table class="table-primary" style="text-align: center;">
+            <thead>Venue Owners</thead>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Contact No</th>
+            <th>Venue Name</th>
+            <tr *ngFor="let e of vowners">
+                <td>{{e.firstName}}</td>
+                <td>{{e.lastName}}</td>
+                <td>{{e.email}}</td>
+                <td>{{e.contact_no}}</td>
+                <td>{{e.vname}}</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <button class="btn-dark" (click)="showAVenuedetails()">View Available Venues</button>
+    <div *ngIf="a3">
+        <table class="table-primary" style="text-align: center;">
+            <thead>Venue Details</thead>
+            <th>Venue Name</th>
+            <th>Venue Area</th>
+            <th>Venue Address</th>
+            <th>Contact No</th>
+            <tr *ngFor="let b of venues">
+                <td>{{b.vname}}</td>
+                <td>{{b.specific_area}}</td>
+                <td>{{b.vaddress}}</td>
+                <td>{{b.contact_no}}</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <button class="btn-dark" (click)="showb()">View Bookings</button>
+    <div *ngIf="a4">
+        <table class="table-primary" style="text-align: center;">
+            <thead>Venue Details</thead>
+            <th>booking_id</th>
+            <th>Booking Date</th>
+            <th>Booking Days</th>
+            <th>vname</th>
+            <tr *ngFor="let b of booking">
+                <td>{{b.booking_id}}</td>
+                <td>{{b.bkdate}}</td>
+                <td>{{b.booking_days}}</td>
+                <td>{{b.venues.vname}}</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+</div>
