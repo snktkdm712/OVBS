@@ -1,0 +1,30 @@
+<div style="background-image: url('https://i.pinimg.com/originals/91/dd/d5/91ddd5d8843a202b2a77dc52b0326d69.jpg');">
+    <div style="background-color: #FF0AFF;"><br><br><br>
+        <h2 class="jumbotron-fluid" style="text-align: center;color: black;">Dashboard</h2>
+        <hr style="border-width: 3px;border-color: black;">
+    </div>
+    <div>
+        <button class="btn-dark" (click)="showBookings()">View Bookings </button>
+        <div *ngIf="a1">
+            <table class="table-primary">
+                <thead>Bookings</thead>
+                <th>Booking Id</th>
+                <th>Venue Name</th>
+                <th>Booking Date</th>
+                <th>Booking Days</th>
+                <th>Cancel Booking</th>
+                <tr *ngFor="let i of bookings">
+                    <td>{{i.booking_id}}</td>
+                    <td>{{i.venues.vname}}</td>
+                    <td>{{i.bkdate}}</td>
+                    <td>{{i.booking_days}}</td>
+                    <td><button (click)="del(i.booking_id)">Cancel Booking</button></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <button class="btn-dark"><a href="/city">Book Venues</a></button>
+        <hr>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>

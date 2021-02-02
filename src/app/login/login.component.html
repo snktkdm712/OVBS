@@ -1,0 +1,44 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Login Template</title>
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="login.component.css">
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5 login-section-wrapper">
+            <div class="brand-wrapper">
+                <h1 alt="logo " class="logo ">OVBS</h1>
+            </div>
+            <div class="login-wrapper my-auto ">
+                <h1 class="login-title ">Log in</h1>
+                <form (ngSubmit)="onSubmit()" ngNativeValidate>
+                    <div class="form-group ">
+                        <label for="email " style="color: black; font-size: x-large; ">Email</label>
+                        <input type="email " name="email " id="email " class="form-control " [(ngModel)]="user.email" placeholder="email@example.com " style="border-block-color: black;" required>
+                    </div>
+                    <div class="form-group mb-4 ">
+                        <label for="password" style="color: black;font-size: x-large; ">Password</label>
+                        <input type="password" name="password " id="password " [(ngModel)]="user.password" class="form-control " placeholder="enter your passsword " style="border-block-color: black;" required>
+                        <div *ngIf="a1">
+                            <h5 style="color: red;">Please Enter Correct Username and Password</h5>
+                        </div>
+                    </div>
+                    <input name="login " id="login " class="btn btn-block login-btn " type="submit" value="Login ">
+                </form>
+                <a href="#! " class="forgot-password-link ">Forgot password?</a>
+                <p class="login-wrapper-footer-text ">Don't have an account? <a data-toggle="modal" data-target="#myModal" href="#myModal" class="text-reset ">Register here</a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-7 px-0 d-none d-sm-block ">
+            <img src="https://i.pinimg.com/originals/59/87/31/598731006a232bd2d3ad0a69b84d74cf.jpg " alt="login image " class="login-img ">
+        </div>
+    </div>
+</div>
