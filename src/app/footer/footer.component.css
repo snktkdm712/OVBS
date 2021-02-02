@@ -1,0 +1,20 @@
+.card-footer {
+    /* position: relative; */
+    height: 50px;
+    margin-top: -50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    color: white;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    /* padding: 55px 0 40px; */
+}
