@@ -1,0 +1,92 @@
+<br><br><br><br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header" style="background-color: black;color:whitesmoke;">Register Venue</div>
+                <div class="card-body">
+
+                    <form class="form-horizontal" (ngSubmit)="onSubmit()" ngNativeValidate>
+
+                        <div class="form-group">
+                            <label for="vname" class="cols-sm-2 control-label">Venue Name</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="vname" id="vname" [(ngModel)]="venue.vname" required placeholder="Enter your Venue Name" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="specific_area" class="cols-sm-2 control-label">Location</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="specific_area" id="specific_area" [(ngModel)]="venue.specific_area" placeholder="Enter your Venue specific Location" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="cols-sm-2 control-label">Your City</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="city" id="city" [(ngModel)]="venue.city" placeholder="Enter your city" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="vaddress" class="cols-sm-2 control-label">Venue Address</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="vaddress" id="vaddress" [(ngModel)]="venue.vaddress" placeholder="Enter your Venue Address" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact_no" class="cols-sm-2 control-label">Contact No</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="tel" class="form-control" name="contact_no" id="contact_no" [(ngModel)]="con" placeholder="Enter your Contact Number" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="vrate" class="cols-sm-2 control-label">Venue Rate</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="vrate" class="form-control" name="vrate" id="vrate" [(ngModel)]="venue.vrate" placeholder="Enter your Vrate" required />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="vservices" class="cols-sm-2 control-label">vservices</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="checkbox" class="form-control" name="vservices" id="vservices" [(ngModel)]="venue.vservices" />
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="description" class="cols-sm-2 control-label">Description</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="description" id="description" [(ngModel)]="venue.description" placeholder="Venue description" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block login-button" style="background-color: black;color: blanchedalmond;">Register</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
