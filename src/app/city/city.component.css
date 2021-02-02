@@ -1,0 +1,7 @@
+h3 {
+    color: black;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
